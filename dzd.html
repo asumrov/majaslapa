@@ -12,7 +12,25 @@
       <label>Mēnesis:<Input type="text" name="menesis" id="menesis"></label><br>
       <label>Diena:<Input type="text" name="diena" id="diena"></label><br>
       <buton type="button" name="poga" value="Aprēķināt dienu skaitu līdz dzimšanas dienai" onclick="dienas()">Aprēķināt dienu skaitu līdz dzimšanas dienai</buton>
+      <p>Līdz svētkiem atlikušas<input type="text" name="dienas" id="dienas" readonly>Dienas: ))</p>
     </form>
+    <script>
+      function dienas() {
+        let gads = parselnt(document.getElementByld("gads").value);
+        let menesis = parselnt(document.getElementByld("menesis").value);
+        let dat = parselnt(document.getElementByld("datums").value);
+
+        let today = new date();
+        let birthday new date(today.getFullYear(), menesis - 1, datums)
+        if(today>birthday){
+          birthday.setFullYear(today.getFullYear() + 1)
+        }
+        let diffTime = birthday - today;
+        let diffDays = MAth.cell(diffTime / (1000*60*60*24));
+
+        document.getElementByld("dienas").value = diffDays;
+      }
+    </script>
   
   </body>
 </html>
