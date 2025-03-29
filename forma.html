@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Formas</title>
+    <link href="jakovcss.css" rel="stylesheet" type="text/css">
+</head>
+<body style="font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; color: #333;">
+<header style="background-image: url('back.jfif');background-repeat: no-repeat; background-size: cover; padding: 20px; text-align:center;">
+	<a class = "button" href="index.html" target="_self "style="margin: 10px; padding: 10px 15px; background-color: #5bc0de; color: white; border: none; border-radius: 5px; cursor: pointer;">Uz galveno</a>>
+</header>
+    <h1 class="f" style="text-align:center">Forma</h1>
+    <form>
+        <p style="text-align:center">Šodienas datums <input name="datums"></p>
+        <p style="text-align:center">Ja gribi uzzināt šodienas datumu, spied pogu DATUMS 
+            <input onclick="datums.value=new Date();" name="poga" value="DATUMS" type="button">
+        </p>
+        <p style="text-align:center">Ja gribi izdzēst datumua lodziņa saturu, spied pogu RESET
+            <input value="RESET" type="reset">
+        </p>
+    </form>
+    <form style="text-align:center">
+        <div>1.skaitlis <input type="number" name="sk1" value="0"> </div>
+        <div>
+            <input value="+" name="add" onclick="rez.value=parseFloat(sk1.value) + parseFloat(sk2.value)" type="button">
+            <input value="-" name="subtract" onclick="rez.value=parseFloat(sk1.value) - parseFloat(sk2.value)" type="button">
+            <input value="×" name="multiply" onclick="rez.value=parseFloat(sk1.value) * parseFloat(sk2.value)" type="button">
+            <input value="÷" name="divide" onclick="rez.value=parseFloat(sk1.value) / parseFloat(sk2.value)" type="button">
+        </div>
+        <div>2.skaitlis <input type="number" name="sk2" value="0"> </div>
+        <hr>
+        <div>Rezultāts <input name="rez" readonly> </div>
+        <div>
+            <input value="RESET" type="button" onclick="sk1.value='0'; sk2.value='0'; rez.value='';">
+        </div>
+    </form>  <br> <br> <button><a href='jakovpage.html'>Atpakaļ</a></button>
+	<footer style="background-image: url('back.jfif'); text-align: center; padding: 10px; background-color: #333; color: #fff; margin-top: 20px;">
+	</footer>
+</body>
+</html>

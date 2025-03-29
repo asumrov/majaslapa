@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="jakovcss.css">
+</head>
+<body style="font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; color: #333;">
+<header style="background-image: url('back.jfif');background-repeat: no-repeat; background-size: cover; padding: 20px; text-align:center;">
+<a class = "button" href="index.html" target="_self "style="margin: 10px; padding: 10px 15px; background-color: #5bc0de; color: white; border: none; border-radius: 5px; cursor: pointer;">Uz galveno</a>
+</header>
+<script>
+function maksa(){
+    let dz = document.getElementsByTagName('input');
+    let sum=0;
+    for(i = 0; i < dz.length-1; i++) {
+       if(dz[i].checked) sum+=Number(dz[i].value);
+    }
+    document.getElementById("maksa").innerHTML="Jāmaksā "+sum;
+ }   
+</script>
+<section>
+<p id="maksa" style="text-align:center; color:red"></p>
+<form style="text-align: center">
+  <input type="checkbox" id="kafija" name="kafija" value="3.60">
+  <label for="kafija">kafija</label><br>
+  <input type="checkbox" id="sula"  name="sula" value="2.50">
+  <label for="sula">sula</label><br>
+  <input type="checkbox" id="kakao" name="kakao" value="3.20">
+  <label for="kakao">kakao</label><br>
+  <input type="checkbox" id="teja" name="teja" value="2.00">
+  <label for="teja">tēja</label><br><br>
+  <input type="button" id="poga" value="jāmaksā" onclick="maksa()">
+</form> 
+<br><br> <button><a href='otrais.html'>Atpakaļ</a></button>
+</section>
+<footer style="background-image: url('back.jfif'); text-align: center; padding: 10px; background-color: #333; color: #fff; margin-top: 20px;">
+</footer>
+</body>
+</html>
