@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name= "viewport" content="width=device-width, initial-scale=1,0">
+    <title>Mervienibas</title>
+</head>
+<body style="font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; color: #333;">
+<header style="background-image: url('back.jfif');background-repeat: no-repeat; background-size: cover; padding: 20px; text-align:center;">
+	<a class = "button" href="index.html" target="_self "style="margin: 10px; padding: 10px 15px; background-color: #5bc0de; color: white; border: none; border-radius: 5px; cursor: pointer;">Uz galveno</a>>
+</header>
+    <h1 style="text-align:center">Informācijas daudzuma mērvienības</h1>
+    <form style="text-align:center">
+      <input type="text" name="GB" placeholder="GB">GB = <br>
+      <input type="button" value="Izteikt megabaitos" onclick="conv();">
+      <input type="text" name="MB" readonly> MB<br>
+      <input type="text" name="GB" placeholder="GB">GB = <br>
+      <input type="button" value="Izteikt MiB" onclick="conv();">
+      <input type="text" name="MiB" readonly> Mib<br>
+    </form>
+    <script>
+      fumction conv() {
+        let GB = document.ElByName('GB') [0].value;
+        let MB = GB*1024;
+        let MiB = GB*1024*1.024;
+        document.ElByName('MB') [0].value = MB;
+        document.ElByName('MiB') [0].value = MiB;
+      }
+    </script>
+	<footer style="background-image: url('back.jfif'); text-align: center; padding: 10px; background-color: #333; color: #fff; margin-top: 20px;">
+	</footer>
+</body>
+</html>
