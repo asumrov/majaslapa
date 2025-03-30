@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gaidot dzimšanas dienu</title>
   </head>
-  <body>
-    <header>
+  <body style="font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; color: #333;">
+    <header style="background-image: url('back.jfif');background-repeat: no-repeat; background-size: cover; padding: 20px; text-align:center;">
+	    <a class = "button" href="index.html" target="_self "style="margin: 10px; padding: 10px 15px; background-color: #5bc0de; color: white; border: none; border-radius: 5px; cursor: pointer;">Uz galveno</a>>>
     </header>
-    <form>
+    <form style="text-align:center">
       <p>“Ievadi pilnu datumu, kad Tev būs tuvākā dzimšanas diena</p>
       <label>Gads:<Input type="text" name="gads" id="gads"></label><br>
       <label>Mēnesis:<Input type="text" name="menesis" id="menesis"></label><br>
       <label>Diena:<Input type="text" name="diena" id="diena"></label><br>
       <buton type="button" name="poga" value="Aprēķināt dienu skaitu līdz dzimšanas dienai" onclick="dienas()">Aprēķināt dienu skaitu līdz dzimšanas dienai</buton>
-      <p>Līdz svētkiem atlikušas<input type="text" name="dienas" id="dienas" readonly>Dienas: ))</p>
+      <p style="background-image: url('back.jfif'); text-align: center; padding: 10px; background-color: #333; color: #fff; margin-top: 20px;">Līdz svētkiem atlikušas<input type="text" name="dienas" id="dienas" readonly>Dienas: ))</p>
     </form>
     <script>
       function dienas() {
@@ -35,4 +36,5 @@
     </script>
   
   </body>
+  <footer style="background-image: url('back.jfif'); text-align: center; padding: 10px; background-color: #333; color: #fff; margin-top: 20px;"></footer>
 </html>
